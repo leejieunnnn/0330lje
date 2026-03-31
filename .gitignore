@@ -1,7 +1,11 @@
-.terraform/
-.tfstate
-.tfstate.backup
-.terraform.lock.hcl
-.tfvars
-.terraform.exe
-*.exe
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files (S3 백엔드 사용 시 필수)
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Sensitive vars files
